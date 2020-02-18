@@ -19,7 +19,8 @@
     $ gatsby COMMAND_NAME --help
     or 
     $ gatsby new --help
-
+7. View Site's data and schema while in Development Server
+    $ http://localhost:8000/__graphql 
 
 *Important Information* 
 
@@ -64,7 +65,22 @@
 
 2. Plugins https://www.gatsbyjs.org/docs/plugins/
     2.1 Example of installing a Gatsby Plugin with gatsby-plugin-sass
+        use --save to create a dependency 
         $ npm install --save gatsby-plugin-sass
+    2.2 Once install you'll want to update your gastby-config.js 
+        EXAMPLE
+        plugins: [
+        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-sass`,
 
+    note(gatsby-plugin-sass will need node-sass)
+        $ npm install --save-dev node-sass
+
+        You can check to make sure everything is installed properly by checking your package.json for node-sass and gatsby-plugin-sass. 
+        From there you can change your layout.css file to layout.scss and your import from .css to .scss
+
+    note(you will need to restart your development server for changes to take effect)
+
+        
 
  -->
