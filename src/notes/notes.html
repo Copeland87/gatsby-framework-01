@@ -1,0 +1,70 @@
+<!-- 
+
+*Gatsby Commands*
+
+1. Installing Gatsby 
+    $ npm install -g gatsby-cli
+2. Creating a new App
+    $ gatsby new gatsby-site
+3. Starting Development Server
+    $ gatsby develop
+    - server will be available at localhost:8000
+4. Creating a Production Build
+    $ gatsby build
+5. Serving the Production Build Locally
+    $ gatsby serve
+6. Help Documentation for Gatsby via CLI
+    $ gatsby --help
+    or 
+    $ gatsby COMMAND_NAME --help
+    or 
+    $ gatsby new --help
+
+
+*Important Information* 
+
+1. Site information stored in "gatsby-config.js"
+    1.1 Site / Application Meta Data 
+    1.2 Plugins
+
+2. Package and Package-lock.json
+    2.1 Adjust needed information for project
+
+3. Things To Know About Gatsby
+    3.1 Comes with React-Helmet
+    3.2 Gastby Link takes the place of React Router 
+
+
+
+*Building In Gatsby* 
+
+1. Routing
+    1.1 Adding new pages and the `Pages` folder 
+        To add new pages instead of having to declare routes with in a routing folder all that is neccessary is to create a new page with in the pages folder and export that page. 
+
+        EXAMPLE
+
+        import React from "react"
+        import { Link } from "gatsby"
+
+        import Layout from "../components/layout"
+        import SEO from "../components/seo"
+
+        const ThirdPage = () => (
+        <Layout>
+            <SEO title="Page Three" />
+            <h1>Hi from the second page</h1>
+            <p>Welcome to page 3</p>
+            <Link to="/">Go back to the homepage</Link>
+        </Layout>
+        )
+
+        export default ThirdPage
+
+
+2. Plugins https://www.gatsbyjs.org/docs/plugins/
+    2.1 Example of installing a Gatsby Plugin with gatsby-plugin-sass
+        $ npm install --save gatsby-plugin-sass
+
+
+ -->
